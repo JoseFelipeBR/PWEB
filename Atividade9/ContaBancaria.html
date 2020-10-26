@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>criarConta</title>
+</head>
+<body>
+    <script>
+        function criarConta(){
+    function Conta(){
+        var nome;
+        var banco;
+        var numConta;
+        var saldo;
+        this.getNome = function() {
+            return nome;
+            };
+        this.setNome = function(value) {
+            nome = value;
+        };
+        this.getBanco = function() {
+            return banco;
+        };
+        this.setBanco = function(value) {
+            banco = value;
+        };
+        this.getNumConta = function() {
+            return numConta;
+        };
+        this.setNumConta = function(value) {
+            numConta = value;
+        };
+        this.getSaldo = function() {
+            return saldo;
+        };
+        this.setSaldo = function(value) {
+            saldo = value;
+        };
+    }
+    function ContaCorrente(){
+        var saldoEspecial;
+        this.getEspecial = function () {
+            return saldoEspecial;
+            };
+        this.setEspecial = function (value) {
+            saldoEspecial = value;
+        };
+    }
+    function Poupanca(){
+        var juros;
+        var dataVen;
+
+        this.getJuros = function () {
+            return juros;
+            };
+        this.setJuros = function (value) {
+            juros = value;
+        };
+        this.getdataVen = function () {
+            return dataVen;
+            };
+        this.setdataVen = function (value) {
+            dataVen = value;
+        };
+    }
+
+    ContaCorrente.prototype = new Conta();
+    Poupanca.prototype = new Conta();
+    cCorrente1 = new ContaCorrente();
+    cPoupanca1 = new Poupanca();
+    
+    //Criando conta corrente
+    cCorrente1.setNome("Joaquim Silveira");
+    cCorrente1.setBanco("Bradesco");
+    cCorrente1.setNumConta(123456789);
+    cCorrente1.setSaldo(1200);
+    cCorrente1.setEspecial(1000);
+
+    //Criando conta poupança
+    cPoupanca1.setNome("Adriana Ferreira");
+    cPoupanca1.setBanco("Banco do Brasil");
+    cPoupanca1.setNumConta(987654321);
+    cPoupanca1.setSaldo(3200.37);
+    cPoupanca1.setJuros("0.4%");
+    cPoupanca1.setdataVen("28/10/2020");
+
+    alert("Conta Corrente\n"+"Nome: " + cCorrente1.getNome() + "\nBanco: " + cCorrente1.getBanco() + "\nNúmero da Conta: " + cCorrente1.getNumConta() 
+            + "\nSaldo: " + cCorrente1.getSaldo() + "\nSaldo Especial: " + cCorrente1.getEspecial());
+    alert("Conta Poupança\n"+"Nome: " + cPoupanca1.getNome() + "\nBanco: " + cPoupanca1.getBanco() + "\nNúmero da Conta: " + cPoupanca1.getNumConta() 
+            + "\nSaldo: " + cPoupanca1.getSaldo() + "\nJuros: " + cPoupanca1.getJuros() + "\nData de Vencimento: " + cPoupanca1.getdataVen());
+}
+        criarConta();
+    </script>
+</body>
