@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./JS/altImagem.js"></script>
+    <title>José Felipe Batistela Rosa</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <a href="index.html" class="grid-4">
+          <img src="Fotos/perfil2.jpeg" alt="Voltar ao início" />
+        </a>
+        <nav class="grid-12 cabecalho_menu">
+          <ul>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="./Documento/curriculoJoseRosa.pdf" target="_blank">Currículo</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="introducao">
+      <div class="container"><h1>José Felipe Batistela Rosa</h1>
+      <blockquote class="quote-externo">
+        <p>Técnico em informática e futuro analista de sistemas</p>
+      </blockquote>
+   
+      <a href="contato.html" class="btn">Contato</a>
+    </div>
+    </section>
+    <section class="formacao container">
+      <h2 class="subtitulo">Formação</h2>
+      <ul class="formacao_lista">
+        <li class="grid-1-3">
+          <div class="formacao_icone">
+            <a href="https://www.etecfernandoprestes.com.br/" target="_blank"><img id="efp" onmouseover="alternarImagem(this)" onmouseout="restaurar(this)" src="./Fotos/etec.jpg" alt="Etec Fernando Prestes"/></a>
+          </div>
+          <h3>Etec Fernando Prestes</h3>
+          <p>Ensino Médio e curso Técnico em Informática concluídos</p>
+        </li>
+        <li class="grid-1-3">
+          <div class="formacao_icone">
+            <a href="http://www.fatecsorocaba.edu.br/" target="_blank"><img id="fs" onmouseover="alternarImagem(this)" onmouseout="restaurar(this)" src="./Fotos/fatec.jpg" alt="Pizza salgada" /></a>
+          </div>
+          <h3>Fatec Sorocaba</h3>
+          <p>Cursando Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+        </li>
+        <li class="grid-1-3">
+          <div class="formacao_icone">
+            <a href="https://sorocabaitavuvu.sp.senai.br/" target="_blank"><img id="slp" onmouseover="alternarImagem(this)" onmouseout="restaurar(this)" src="./Fotos/senai.jpg" alt="Pizza salgada" /></a>
+          </div>
+          <h3>SENAI Luiz Pagliato</h3>
+          <p>Curso de Web Designer</p>
+        </li>
+      </ul>
+
+      <div class="call">
+        <p>Outros cursos realizados</p>
+        <a href="cursos.html" class="btn btn-preto">Cursos</a>
+      </div>
+    </section>
+    <!-- fecha formação -->
+
+    <section class="experiencias">
+      <div class="container">
+        <h2 class="subtitulo">Experiências anteriores</h2>
+        <ul>
+          <li class="grid-8">
+            <img id="b1" onmouseover="alternarImagem(this)" onmouseout="restaurar(this)" src="./Fotos/boituva.jpg" alt="Entrada de Boituva"/>
+          </li>
+          <li class="historia1 grid-4">
+            Ajudante de Armazém na empresa Grupo Petrópolis em Boituva/SP
+             de agosto/2017 a fevereiro/2018.
+          </li>
+          <li class="historia2 grid-4">
+            Auxiliar de Serviços Gerais em uma empresa familiar situada em Boituva/SP, que produzia equipamentos para academias 
+            período de janeiro/2012 a dezembro/2015.
+          </li>
+        </ul>
+        <div class="call">
+          </div>
+      </div>
+    </section>
+    <section class="qualidade container">
+      <h2 class="subtitulo">Qualidades</h2>
+      <ul class="qualidade_lista">
+        <li class="grid-1-3">
+          <h3>Dedicado</h3>
+          <p>
+            Quando inicio um projeto dedico o meu máximo até a sua conclusão.
+          </p>
+        </li>
+        <li class="grid-1-3">
+          <h3>Criativo</h3>
+          <p>
+            Gosto de desenvolver soluções de maneira criativa
+          </p>
+        </li>
+        <li class="grid-1-3">
+          <h3>Resolução de Problemas</h3>
+          <p>
+            Tenho facilidade ao identificar problemas em um sistema ou projeto.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="grid-8 footer_historia">
+            <h3>Sobre mim</h3>
+            <p>
+              Sou José Felipe, um jovem bem educado que sempre trata os outros com respeito,
+               que ama aprender coisas novas e gosta de um desafio.
+            </p>
+          </div>
+          <div class="grid-4 footer_contato">
+            <h3>Currículo para download</h3>
+            <br>
+            <a href="./Documento/curriculoJoseRosa.pdf" target="_blank" class="btn btn-branco">Currículo</a>
+          </div>
+          <div class="grid-4 footer_redes">
+            <h3>Redes sociais</h3>
+            <ul>
+              <li>
+                <a class="fb" href="https://www.facebook.com/jose.felipe.944" target="_blank"
+                  ><img src="./Fotos/facebook.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://whatsapp.com" target="_blank"
+                  ><img src="./Fotos/whatsapp.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a class="gh" href="https://github.com/JoseFelipeBR/PWEB" target="_blank"
+                  ><img src="./Fotos/github2.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        <div class="container">
+          <p class="grid-16">
+            José Felipe 2020 - Alguns dos direitos reservados
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

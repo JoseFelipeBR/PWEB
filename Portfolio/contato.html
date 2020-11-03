@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contato.css" />
+    <script src="./JS/armazenaContato.js"></script>
+    <title>Portfólio José Rosa - Contato</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <a href="index.html" class="grid-4">
+          <img src="Fotos/perfil2.jpeg" alt="José Felipe" />
+        </a>
+        <nav class="grid-12 cabecalho_menu">
+          <ul>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="./Documento/curriculoJoseRosa.pdf" target="_blank">Currículo</a></li>
+            <li><a href="contato.html" class="menu_ativo">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="introducao_interna interna_sobre">
+      <div class="container">
+        <h1>Contato</h1>
+
+        <p>Entre em contato se gostou de meu currículo ou quizer desenvolver um projeto juntos</p>
+      </div>
+    </section>
+
+    <section class="dadosdecontato container">
+      <div class="grid-6">
+        <h2 class="subtitulo_interno">Dados de contato</h2>
+        <p>
+          Informe seu contato para que eu possa entrar em contato com
+          você
+        </p>
+      </div>
+    </section>
+
+    <section class="formulario">
+      <div class="container">
+        <form id="form_contato" class="form grid-8">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" />
+          <label for="email">E-mail</label>
+          <input type="email" id="email" />
+          <label for="Mensagem">Mensagem</label>
+          <textarea id="mensagem"></textarea>
+          <button class="btn-azul" onclick="armazenaContato()" type="submit">Enviar</button>
+        </form>
+        <div class="dados grid-8">
+          <h3>Dados</h3>
+          <span>+55 15 99665-9285 </span>
+          <span>jose.rosa5@fatec.sp.gov.br</span>
+          <span class="endereco">Rua Atanásio Soarez 3395, bloco 14 ap. 12 - Sorocaba - SP </span>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="grid-8 footer_historia">
+            <h3>Sobre mim</h3>
+            <p>
+              Sou José Felipe, um jovem bem educado que sempre trata os outros com respeito,
+               que ama aprender coisas novas e gosta de um desafio.
+            </p>
+          </div>
+          <div class="grid-4 footer_contato">
+            <h3>Currículo para download</h3>
+            <br>
+            <a href="./Documento/curriculoJoseRosa.pdf" target="_blank" class="btn btn-branco">Currículo</a>
+          </div>
+          <div class="grid-4 footer_redes">
+            <h3>Redes sociais</h3>
+            <ul>
+              <li>
+                <a class="fb" href="https://www.facebook.com/jose.felipe.944" target="_blank"
+                  ><img src="./Fotos/facebook.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://whatsapp.com" target="_blank"
+                  ><img src="./Fotos/whatsapp.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a class="gh" href="https://github.com/JoseFelipeBR/PWEB" target="_blank"
+                  ><img src="./Fotos/github2.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        <div class="container">
+          <p class="grid-16">
+            José Felipe 2020 - Alguns dos direitos reservados
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

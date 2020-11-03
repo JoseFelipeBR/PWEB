@@ -1,0 +1,25 @@
+.interna_cursos{
+    background: #555555;
+    background-size: cover;
+}
+
+.missao_cursos{
+    padding-top: 50px;
+}
+
+.missao_cursos p{
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 1em;
+    padding-right: 60px;
+}
+
+.foto-equipe{
+    padding-top: 10px;
+}
+.missao_cursos ul li{
+    font-family: Georgia, 'Times New Roman',  serif;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 1em;
+}
