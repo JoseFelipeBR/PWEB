@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 11</title>
+    <script>
+        function converteDados(){
+            if(document.getElementById("convMa").checked == true && document.getElementById("convMi").checked == true){
+                alert("Por favor, apenas selecione uma das opções.");
+            }
+            else if(document.getElementById("convMa").checked == true){
+                document.getElementById("texto").value = document.getElementById("texto").value.toUpperCase();
+            }
+            else if(document.getElementById("convMi").checked == true){
+                document.getElementById("texto").value = document.getElementById("texto").value.toLowerCase();
+            }else{
+                alert("Por favor, selecione pelo menos uma das opções.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="principal" width=200 heigth=200 style="text-align: center;">
+        Texto a ser convertido:
+        <br>
+        <textarea name="Texto" type="text" id="texto" size="52" maxlength="150"></textarea>
+        <br>
+        <br>
+        <br>
+        <input name="convMaiuscula" type="checkbox" form="formularioT" value="Converter Maiúscula" id="convMa">
+        Converter para Maiúscula
+        <br>
+        <input name="convMinuscula" type="checkbox" form="formularioT" value="Converter Minúscula" id="convMi">
+        Converter para Minúscula
+        <br>
+        <input name="converter" type="button" form="formularioT" value="Converter" onclick="converteDados();">
+    </div>
+</body>    
