@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 12</title>
+    <script src="./Atividade12.js"></script>
+</head>
+<body>
+    <form action="teste" method="POST" name="formulario1" id="formulario1" onsubmit="return validar();" style="width: 40%; height: 100%; align-items: center; text-align: center;">
+        <header><h1>Formulário Principal</h1></header>
+        <div id="principal" style="text-align: justify; align-self: center;" >
+            <label>Nome</label>
+            <br>
+            <input name="Nome" type="text" id="nome" size="30" maxlength="30"/>
+            <br>
+            <br>
+            <label>E-mail:</label>
+            <br>
+            <input name="Email" type="text" id="email" size="40" maxlength="40"/>
+            <br>
+            <br>
+            <label>Comentário:</label>
+            <br>
+            <textarea name="Texto" type="text" id="texto" size="52" maxlength="150" cols="40" rows="4" style="resize: none;"></textarea>
+            <br>
+            <br>
+            <br>
+            <h2 style="text-align: center;">Pesquisa:</h2>
+            <br> 
+            <p style="text-align:center;">Primeira vez nessa Página???</p>
+            <p style="text-align:center;">
+            <input name="radiogroup" type="radio" form="formulario1" value="Sim" id="rdbtnSim">Sim
+            <input name="radiogroup" type="radio" form="formulario1" value="Não" id="rdbtnNao" checked="true">Não
+            </p>
+            <br>
+            <p style="text-align:center;">
+                <input name="Submit" type="submit" form="formulario1" value="Enviar">
+                <input name="Limpar" type="button" form="formulario1" onclick="limpar()" value="Limpar">
+            </p>
+        </div>
+    </form>
+</body>    
